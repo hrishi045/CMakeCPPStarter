@@ -9,4 +9,4 @@ set(CMAKE_BINARY_DIR "${PROJECT_SOURCE_DIR}/bin/")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/bin/")
 file(GLOB source_files "${CMAKE_SOURCE_DIR}/*.cpp")
 
-add_executable(HelloWorld ${source_files})
+add_executable(${PROJECT_NAME} ${source_files})
