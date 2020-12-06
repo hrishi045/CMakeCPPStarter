@@ -10,3 +10,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/bin/")
 file(GLOB source_files "${CMAKE_SOURCE_DIR}/*.cpp")
 
 add_executable(${PROJECT_NAME} ${source_files})
+set_target_properties(${PROJECT_NAME} PROPERTIES
+        OUTPUT_NAME
+        "${PROJECT_NAME}-${CMAKE_CXX_PLATFORM_ID}-${CMAKE_SYSTEM_PROCESSOR}-${CMAKE_BUILD_TYPE}")
+
